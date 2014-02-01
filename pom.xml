@@ -93,7 +93,7 @@
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-servlet</artifactId>
-            <version>1.0.0.Beta31</version>
+            <version>1.0.0.CR2</version>
         </dependency>
 
         <dependency>
