@@ -41,7 +41,7 @@ public class ServerCommand implements Runnable
         UndertowJaxrsServer ut = new UndertowJaxrsServer();
         DaggerApplication app = ObjectGraph.create(this).get(DaggerApplication.class);
         ut.deploy(app);
-        ut.start(Undertow.builder().addListener(bindPort, bindHost));
+        ut.start(Undertow.builder().addHttpListener(bindPort, bindHost));
         try {
             Thread.currentThread().join();
         }
